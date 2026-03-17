@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("../assets/fonts/Lato-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+:root {
+  --primary-color: #d4f3eb;
+  --secondary-color: #ff8fb5;
+  --primary-text-color: #2d2d2d;
+  --secondary-text-color: #666666;
+  --background-color: #ffffff;
+  --title-font-weight: 700;
+  --text-font-weight: 400;
+}
