@@ -1,6 +1,6 @@
 header {
   background-color: var(--primary-color);
-  padding: var(--spacing-lg);
+  padding: var(--spacing-md);
 }
 
 nav {
