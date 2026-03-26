@@ -10,6 +10,13 @@
   font-weight: 400;
 }
 
+
+@font-face {
+  font-family: "Caveat";
+  src: url("../assets/fonts/Caveat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 400;
+}
+
 :root {
   /* Cores */
 
@@ -17,15 +24,20 @@
   --secondary-color: #ff8fb5;
   --primary-text-color: #2d2d2d;
   --secondary-text-color: #666666;
-  --background-color: #ffffff;
+  --background-color: #EDE8E0;
   /* Texto */
   --title-font-weight: 700;
   --text-font-weight: 400;
   --fonte-title: "Poppins", sans-serif;
   --font-body: "Lato-Regular", sans-serif;
-  --font-size-lg: 24px;
-  --font-size-md: 18px;
-  --font-size-sm: 14px;
+ /* TAMANHOS DE FONTE */
+--font-size-xs: 12px;
+--font-size-sm: 14px;
+--font-size-base: 16px;
+--font-size-lg: 18px;
+--font-size-xl: 24px;
+--font-size-2xl: 32px;
+--font-size-3xl: 48px;
   /* ESPAÇAMENTO */
   --spacing-xs: 4px;
   --spacing-sm: 8px;
