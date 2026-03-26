@@ -11,11 +11,59 @@
 }
 
 :root {
+  /* Cores */
+
   --primary-color: #d4f3eb;
   --secondary-color: #ff8fb5;
   --primary-text-color: #2d2d2d;
   --secondary-text-color: #666666;
   --background-color: #ffffff;
+  /* Texto */
   --title-font-weight: 700;
   --text-font-weight: 400;
+  --fonte-title: "Poppins", sans-serif;
+  --font-body: "Lato-Regular", sans-serif;
+  --font-size-lg: 24px;
+  --font-size-md: 18px;
+  --font-size-sm: 14px;
+  /* ESPAÇAMENTO */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-font-weight);
+  color: var(--primary-text-color);
+  background-color: var(--background-color);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--fonte-title);
+  font-weight: var(--title-font-weight);
+}
+
+a {
+  font-family: var(--fonte-title);
+  font-weight: var(--title-font-weight);
 }

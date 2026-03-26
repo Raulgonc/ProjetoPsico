@@ -1,0 +1,106 @@
+<svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(400,400)">
+
+    <!-- Camada externa -->
+    <g fill="#ff8fb5">
+      <path d="M0,-280 
+               C80,-240 100,-140 0,-100 
+               C-100,-140 -80,-240 0,-280 Z" transform="rotate(0)"></path>
+      <path d="M0,-280 
+               C80,-240 100,-140 0,-100 
+               C-100,-140 -80,-240 0,-280 Z" transform="rotate(30)"></path>
+      <path d="M0,-280 
+               C80,-240 100,-140 0,-100 
+               C-100,-140 -80,-240 0,-280 Z" transform="rotate(60)"></path>
+      <path d="M0,-280 
+               C80,-240 100,-140 0,-100 
+               C-100,-140 -80,-240 0,-280 Z" transform="rotate(90)"></path>
+      <path d="M0,-280 
+               C80,-240 100,-140 0,-100 
+               C-100,-140 -80,-240 0,-280 Z" transform="rotate(120)"></path>
+      <path d="M0,-280 
+               C80,-240 100,-140 0,-100 
+               C-100,-140 -80,-240 0,-280 Z" transform="rotate(150)"></path>
+      <path d="M0,-280 
+               C80,-240 100,-140 0,-100 
+               C-100,-140 -80,-240 0,-280 Z" transform="rotate(180)"></path>
+      <path d="M0,-280 
+               C80,-240 100,-140 0,-100 
+               C-100,-140 -80,-240 0,-280 Z" transform="rotate(210)"></path>
+      <path d="M0,-280 
+               C80,-240 100,-140 0,-100 
+               C-100,-140 -80,-240 0,-280 Z" transform="rotate(240)"></path>
+      <path d="M0,-280 
+               C80,-240 100,-140 0,-100 
+               C-100,-140 -80,-240 0,-280 Z" transform="rotate(270)"></path>
+      <path d="M0,-280 
+               C80,-240 100,-140 0,-100 
+               C-100,-140 -80,-240 0,-280 Z" transform="rotate(300)"></path>
+      <path d="M0,-280 
+               C80,-240 100,-140 0,-100 
+               C-100,-140 -80,-240 0,-280 Z" transform="rotate(330)"></path>
+    </g>
+
+    <!-- Camada secundária -->
+    <g fill="#d4f3eb">
+      <path d="M0,-180 
+               C60,-150 70,-80 0,-60 
+               C-70,-80 -60,-150 0,-180 Z" transform="rotate(15)"></path>
+      <path d="M0,-180 
+               C60,-150 70,-80 0,-60 
+               C-70,-80 -60,-150 0,-180 Z" transform="rotate(45)"></path>
+      <path d="M0,-180 
+               C60,-150 70,-80 0,-60 
+               C-70,-80 -60,-150 0,-180 Z" transform="rotate(75)"></path>
+      <path d="M0,-180 
+               C60,-150 70,-80 0,-60 
+               C-70,-80 -60,-150 0,-180 Z" transform="rotate(105)"></path>
+      <path d="M0,-180 
+               C60,-150 70,-80 0,-60 
+               C-70,-80 -60,-150 0,-180 Z" transform="rotate(135)"></path>
+      <path d="M0,-180 
+               C60,-150 70,-80 0,-60 
+               C-70,-80 -60,-150 0,-180 Z" transform="rotate(165)"></path>
+      <path d="M0,-180 
+               C60,-150 70,-80 0,-60 
+               C-70,-80 -60,-150 0,-180 Z" transform="rotate(195)"></path>
+      <path d="M0,-180 
+               C60,-150 70,-80 0,-60 
+               C-70,-80 -60,-150 0,-180 Z" transform="rotate(225)"></path>
+      <path d="M0,-180 
+               C60,-150 70,-80 0,-60 
+               C-70,-80 -60,-150 0,-180 Z" transform="rotate(255)"></path>
+      <path d="M0,-180 
+               C60,-150 70,-80 0,-60 
+               C-70,-80 -60,-150 0,-180 Z" transform="rotate(285)"></path>
+      <path d="M0,-180 
+               C60,-150 70,-80 0,-60 
+               C-70,-80 -60,-150 0,-180 Z" transform="rotate(315)"></path>
+      <path d="M0,-180 
+               C60,-150 70,-80 0,-60 
+               C-70,-80 -60,-150 0,-180 Z" transform="rotate(345)"></path>
+    </g>
+
+    <!-- Núcleo detalhado -->
+    <g fill="#ff8fb5">
+      <circle r="50"></circle>
+      <g>
+        <circle cx="0" cy="-80" r="12"></circle>
+        <circle cx="0" cy="-80" r="12" transform="rotate(30)"></circle>
+        <circle cx="0" cy="-80" r="12" transform="rotate(60)"></circle>
+        <circle cx="0" cy="-80" r="12" transform="rotate(90)"></circle>
+        <circle cx="0" cy="-80" r="12" transform="rotate(120)"></circle>
+        <circle cx="0" cy="-80" r="12" transform="rotate(150)"></circle>
+        <circle cx="0" cy="-80" r="12" transform="rotate(180)"></circle>
+        <circle cx="0" cy="-80" r="12" transform="rotate(210)"></circle>
+        <circle cx="0" cy="-80" r="12" transform="rotate(240)"></circle>
+        <circle cx="0" cy="-80" r="12" transform="rotate(270)"></circle>
+        <circle cx="0" cy="-80" r="12" transform="rotate(300)"></circle>
+        <circle cx="0" cy="-80" r="12" transform="rotate(330)"></circle>
+      </g>
+    </g>
+
+    <circle r="25" fill="#d4f3eb"></circle>
+
+  </g>
+</svg>
