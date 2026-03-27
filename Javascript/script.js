@@ -1,3 +1,6 @@
+
+// Script para o menu hambúrguer
+
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 
@@ -5,6 +8,9 @@ hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
     hamburger.classList.toggle('active');
 });
+
+
+// Efeito de máquina de escrever para o texto do hero 
 
 const heroText = document.querySelector('.hero-text');
 const text = "Quem olha para fora sonha, quem olha para dentro desperta";
