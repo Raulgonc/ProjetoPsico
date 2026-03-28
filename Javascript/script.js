@@ -26,3 +26,20 @@ function typeWriter() {
 }
 
 typeWriter();
+
+// Função para buscar os posts do Airtable
+async function fetchPosts() {
+    try {
+        const response = await fetch('/api/posts');
+        const data = await response.json();
+        return data.records;
+    } catch (error) {
+        console.error('Erro ao buscar posts:', error);
+        return [];
+    }
+}
+
+
+
+
+

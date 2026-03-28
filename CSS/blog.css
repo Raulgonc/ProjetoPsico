@@ -1,0 +1,117 @@
+.blog-hero {
+    background-color: var(--background-color);
+    padding: var(--spacing-2xl) var(--spacing-lg);
+    text-align: center;
+    margin-top: 80px;
+}
+
+.blog-hero h1 {
+    font-size: var(--font-size-3xl);
+    color: var(--primary-text-color);
+    margin-bottom: var(--spacing-md);
+}
+
+.blog-hero p {
+    font-size: var(--font-size-lg);
+    color: var(--secondary-text-color);
+}
+
+.blog-posts {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--spacing-2xl) var(--spacing-lg);
+}
+
+.posts-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2xl);
+}
+
+.post-card {
+    background-color: var(--primary-color);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.post-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    transform: translateY(-4px);
+}
+
+.post-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.post-content {
+    padding: var(--spacing-lg);
+}
+
+.post-date {
+    font-size: var(--font-size-sm);
+    color: var(--secondary-text-color);
+    margin-bottom: var(--spacing-md);
+}
+
+.post-title {
+    font-size: var(--font-size-xl);
+    color: var(--primary-text-color);
+    margin-bottom: var(--spacing-md);
+}
+
+.post-preview {
+    font-size: var(--font-size-base);
+    color: var(--primary-text-color);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-lg);
+}
+
+.post-text-full {
+    display: none;
+    font-size: var(--font-size-base);
+    color: var(--primary-text-color);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-lg);
+}
+
+.post-text-full.active {
+    display: block;
+}
+
+.btn-leia-mais {
+    background: none;
+    border: none;
+    color: var(--secondary-color);
+    font-weight: var(--title-font-weight);
+    cursor: pointer;
+    padding: 0;
+    font-size: var(--font-size-base);
+    transition: all 0.3s ease;
+}
+
+.btn-leia-mais:hover {
+    color: var(--primary-text-color);
+}
+
+.btn-leia-mais.open {
+    display: none;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .blog-hero h1 {
+        font-size: var(--font-size-2xl);
+    }
+
+    .post-image {
+        height: 200px;
+    }
+
+    .post-content {
+        padding: var(--spacing-md);
+    }
+}
