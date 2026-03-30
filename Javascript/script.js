@@ -29,6 +29,67 @@ if (heroText) {
     typeWriter();
 }
 
+// Carrossel de Avaliações
+const carrocelTrack = document.querySelector('.carrocel-track');
+if (carrocelTrack) {
+    const cards       = Array.from(carrocelTrack.children);
+    const prevBtn     = document.querySelector('.carrocel-prev');
+    const nextBtn     = document.querySelector('.carrocel-next');
+    const dotsEl      = document.querySelector('.carrocel-dots');
+    const GAP         = 24; // deve coincidir com --spacing-lg no CSS
+    let current       = 0;
+    let autoPlayTimer;
+
+    function getVisible() {
+        return window.innerWidth >= 768 ? 3 : 1;
+    }
+
+    function getMaxIndex() {
+        return Math.max(0, cards.length - getVisible());
+    }
+
+    function buildDots() {
+        dotsEl.innerHTML = '';
+        const pages = Math.ceil(cards.length / getVisible());
+        for (let i = 0; i < pages; i++) {
+            const dot = document.createElement('button');
+            dot.className = 'carrocel-dot';
+            dot.setAttribute('aria-label', `Página ${i + 1}`);
+            dot.addEventListener('click', () => { goTo(i * getVisible()); resetAutoPlay(); });
+            dotsEl.appendChild(dot);
+        }
+        updateDots();
+    }
+
+    function updateDots() {
+        const dots = dotsEl.querySelectorAll('.carrocel-dot');
+        const activePage = Math.floor(current / getVisible());
+        dots.forEach((d, i) => d.classList.toggle('active', i === activePage));
+    }
+
+    function goTo(index) {
+        current = Math.max(0, Math.min(index, getMaxIndex()));
+        const cardWidth = cards[0].offsetWidth;
+        carrocelTrack.style.transform = `translateX(-${current * (cardWidth + GAP)}px)`;
+        updateDots();
+    }
+
+    function next() { goTo(current >= getMaxIndex() ? 0 : current + 1); }
+    function prev() { goTo(current <= 0 ? getMaxIndex() : current - 1); }
+
+    function startAutoPlay() { autoPlayTimer = setInterval(next, 5000); }
+    function resetAutoPlay() { clearInterval(autoPlayTimer); startAutoPlay(); }
+
+    prevBtn.addEventListener('click', () => { prev(); resetAutoPlay(); });
+    nextBtn.addEventListener('click', () => { next(); resetAutoPlay(); });
+
+    window.addEventListener('resize', () => { buildDots(); goTo(0); });
+
+    buildDots();
+    goTo(0);
+    startAutoPlay();
+}
+
 // Animação de entrada da seção Sobre Mim
 const sobreElementos = document.querySelectorAll('.sobre-texto, .sobre-foto');
 if (sobreElementos.length) {
