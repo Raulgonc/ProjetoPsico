@@ -1,0 +1,10 @@
+# Variáveis de ambiente — NUNCA commitar
+.env
+.env.local
+.env.*.local
+
+# Dependências
+node_modules/
+
+# Build
+.vercel
