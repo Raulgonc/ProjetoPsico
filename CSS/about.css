@@ -54,6 +54,31 @@
 }
 
 
+/* Animações de entrada da seção Sobre Mim */
+.sobre-texto,
+.sobre-foto {
+    opacity: 0;
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.sobre-texto {
+    transform: translateX(-60px);
+}
+
+.sobre-foto {
+    transform: translateX(60px);
+}
+
+.sobre-texto.visivel,
+.sobre-foto.visivel {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.sobre-foto.visivel {
+    transition-delay: 0.2s;
+}
+
 /* Desktop grande */
 @media (min-width: 1200px) {
     .sobre-texto h2 {
